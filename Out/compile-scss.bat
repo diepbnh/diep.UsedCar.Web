@@ -1,0 +1,1 @@
+sass --watch PHP\assets\scss:PHP\assets\css --style compressed

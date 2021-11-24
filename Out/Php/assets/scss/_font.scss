@@ -1,0 +1,16 @@
+/*=================== fonts ====================*/
+@charset "UTF-8";
+@include font-face('MontserratBold', $font-path + 'MontserratBold');
+@include font-face('MontserratRegular', $font-path + 'MontserratRegular');
+@include font-face('MontserratSemiBold', $font-path + 'MontserratSemiBold');
+/* *** */
+.f-mont-b {
+	font-family: MontserratBold, Arial, Helvetica, sans-serif !important;
+}
+.f-mont-r {
+	font-family: MontserratRegular, Arial, Helvetica, sans-serif !important;
+}
+.f-mont-semi {
+	font-family: MontserratSemiBold, Arial, Helvetica, sans-serif !important;
+}
+/* *** */

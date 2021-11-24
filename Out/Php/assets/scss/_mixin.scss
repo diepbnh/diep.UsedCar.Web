@@ -1,0 +1,48 @@
+@mixin cmd-hover-effect {
+	transition-property: color, background-color, border-color;
+	transition-duration: .2s;
+	transition-timing-function: linear;
+}
+@mixin cmd-outline-effect {
+	outline: thin dotted #333;
+	outline: 0 auto -webkit-focus-ring-color !important;
+	outline-offset: -2px;
+}
+@mixin cmd-box-shadow {
+	box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, .5) !important;
+}
+@mixin cmd-noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/// Given the location of a webfont, will generate a font-face declaration with multiple file formats.
+/// @access public
+/// @param {String} $font-name - Font family name
+/// @param {String} $file-name - File name (no extension)
+/// @param {String | Number} $weight [normal] - Font weight
+/// @param {String} $style [normal] - Font style
+/// @example scss - Usage
+///   @include font-face('gotham', '/fonts/gotham');
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url($file-name + '.eot');
+		src: url($file-name + '.eot?#iefix') format('embedded-opentype'),
+		url($file-name + '.woff') format('woff'),
+		url($file-name + '.ttf') format('truetype'),
+		url($file-name + '.svg##{$font-name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}

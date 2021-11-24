@@ -1,0 +1,54 @@
+/*=================== Responsive ====================*/
+html {
+	font-size: 13px;
+	@media (min-width: 375px) {
+		font-size: 14px;
+	}
+	@media (min-width: 1200px) {
+		// font-size: 15px;
+	}
+	@media (min-width: 1400px) {
+		font-size: 14.5px;
+	}
+	@media (min-width: 1600px) {
+		font-size: 15px;
+	}
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 5 breakpoints
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap because it is "Mobile First"
+*/
+// Small sm
+@media (min-width: 576px) {
+	/*  *** */
+}
+// Medium md
+@media (min-width: 768px) {
+	/*  *** */
+}
+// Large lg
+@media (min-width: 992px) {
+	/*  *** */
+}
+// Extra large xl
+@media (min-width: 1200px) {
+	/*  *** */
+}
+// Extra extra large xxl
+@media (min-width: 1400px) {
+	/*  *** */
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+@media (max-width: 767px) {
+	/*  *** */
+}

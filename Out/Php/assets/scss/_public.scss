@@ -1,0 +1,106 @@
+.cmd-logo {
+	max-width: 135px;
+	@media (min-width: 576px) {
+		max-width: 170px;
+	}
+	@media (min-width: 1200px) {
+		max-width: 200px;
+	}
+}
+.cmd-main {
+	margin-top: 3.5em;
+	@media (min-width: 576px) {
+		margin-top: 5.5em;
+	}
+}
+.cmd-section-banner {
+	color: #fff;
+	background: $color-secondary;
+	padding: 2em 0;
+	.container-fluid {
+		position: relative;
+		>.cmd-section-banner-title {
+			text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+		}
+		>.cmd-section-banner-text {
+			padding: 1em 0 0 0;
+			@media (min-width: 992px) {
+				width: 30em;
+			}
+		}
+		.cmd-section-banner-img {
+			max-width: 500px;
+			width: 100%;
+			@media (min-width: 992px) {
+				position: absolute;
+				right: 0;
+				bottom: -2.5em;
+			}
+			@media (min-width: 1200px) {
+				right: 2em;
+				bottom: -2.5em;
+			}
+			@media (min-width: 1400px) {
+				max-width: 620px;
+				right: 8em;
+				bottom: -4em;
+			}
+		}
+	}
+}
+.cmd-section-search {
+	.cmd-control {
+		&::-webkit-input-placeholder {
+			color: #000;
+			font-family: MontserratSemiBold, Arial, Helvetica, sans-serif;
+		}
+	}
+}
+.cmd-section-popular-makes {
+	.cmd-popular-makes {
+		color: #000;
+		&:hover {
+			background: $color-light;
+		}
+	}
+}
+.cmd-section-price {
+	.cmd-popular-searches {
+		.cmd-lnk {
+			color: #000;
+			text-decoration: none;
+			&:before {
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				display: inline-block;
+				content: '\f105';
+				margin: 0 0.5em;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.cmd-section-compare {
+	background: url($img-path+'city.svg') bottom center no-repeat;
+	background-size: contain;
+}
+.cmd-footer {
+	a:not(.cmd-social) {
+		color: $color-base;
+		&:hover {
+			color: #000;
+		}
+	}
+	.cmd-social {
+		color: #000;
+		font-size: $font-size-x-large;
+		&:hover {
+			color: $color-primary;
+		}
+	}
+	.svg-inline--fa {
+		display: inline-block !important;
+	}
+}
