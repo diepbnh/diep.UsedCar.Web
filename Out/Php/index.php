@@ -3,11 +3,6 @@
 <!-- ********************** start head ********************** -->
 <?php include '_include/head.php';?>
 <!--********************** end head ********************** -->
-<style type="text/css">
-/* .row-cols-lg-6 {
-    background: red
-} */
-</style>
 
 <body class="d-flex flex-column h-100">
     <!-- ********************** start header ********************** -->
